@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Decentralized Medical Records</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/jayateertha043/Decentralized-Medical-Records/blob/master/LICENCE.txt" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/jayateerthaG" target="_blank">
+    <img alt="Twitter: jayateerthaG" src="https://img.shields.io/twitter/follow/jayateerthaG.svg?style=social" />
+  </a>
+</p>
 
-## Available Scripts
+>DMR is the new innovative healthCare ecosystem built upon Ethereum network and IPFS technology 
 
-In the project directory, you can run:
+## Description
 
-### `yarn start`
+DMR innovative healthCare ecosystem built upon Ethereum network and IPFS technology.
+It gives complete control of your records and lets you decide who can access your records.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+All the files/records uploaded are stores using InterPlanetary File System(IPFS),which is more secure and
+keeps your data in a distributed environment to prevent data loss and redundancy
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## REQUIREMENTS AND INSTALLATION
 
-### `yarn test`
+You need to have npm installed in your system <br />
+You also need Metamask extension installed in your chrome browser(PC) or Metamask app in Android.</br>
+If you using android open the link using Metamask browser 
+Use <code>npm start</code> to test the project in your localhost
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used :
 
-### `yarn build`
+1. Solidity
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. ReactJS
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+3. Material UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Web3 
 
-### `yarn eject`
+5. Metamask 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Modules:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Owner:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Owner is the creator of the smart contract.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Ownership is transferable
 
-## Learn More
+Owners can add/remove admins
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Admin:
 
-### Code Splitting
+Can add Admins
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Can remove Admins
 
-### Analyzing the Bundle Size
+Owner of the contract can tranfer his ownership
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+Hospital:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Can add patients
 
-### Advanced Configuration
+Can view patient's records with permission
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Can add patient's records with permission
 
-### Deployment
+Patient:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Can Sign/Login up as patient
 
-### `yarn build` fails to minify
+Can view/add own records
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Can grant/revoke permissions to add/view records
+
+## Author
+
+👤 **Jayateertha G**
+
+* Twitter: [@jayateerthaG](https://twitter.com/jayateerthaG)
+* Github: [@jayateertha043](https://github.com/jayateertha043)
+
+## Show your support
+
+<a href="https://www.buymeacoffee.com/en3EoKG7j" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="50px" width="150px" ></a><br />
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2020 [Jayateertha Guruprasad](https://github.com/jayateertha043).<br/>
+This project is [MIT](https://github.com/jayateertha043/Decentralized-Medical-Records/blob/master/LICENCE.txt) licensed.
