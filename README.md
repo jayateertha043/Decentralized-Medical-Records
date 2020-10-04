@@ -19,9 +19,8 @@ It gives complete control of your records and lets you decide who can access you
 All the files/records uploaded are stores using InterPlanetary File System(IPFS),which is more secure and
 keeps your data in a distributed environment to prevent data loss and redundancy
 
-Visit : https://blockchain-dmr.netlify.app/ for testing live.
-
-Visit : https://rinkeby.etherscan.io/address/0x33febb8f192941a87d87ef70cc5f4427c44bf29e for Smart Contract Address.
+>Visit : https://blockchain-dmr.netlify.app/ for testing live.
+>Visit : https://rinkeby.etherscan.io/address/0x33febb8f192941a87d87ef70cc5f4427c44bf29e for Smart Contract Address.
 
 ## REQUIREMENTS AND INSTALLATION
 
