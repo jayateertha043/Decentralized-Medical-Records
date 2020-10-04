@@ -58,7 +58,7 @@ Use <code>npm start</code> to test the project in your localhost.
 
 	+ Can remove Admins
 
-	+ Owner of the contract can tranfer his ownership
+	+ Can add Hospitals 
 
 
 * Hospital:
