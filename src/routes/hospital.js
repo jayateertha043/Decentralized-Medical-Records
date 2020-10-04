@@ -156,7 +156,7 @@ class Hospital extends Component {
                             <Typography>Add Records</Typography>
                         </Box>
                         <Box >
-                            <TextField label="Other Patient Address" onChange={this.onaddrChange}></TextField>
+                            <TextField label="Patient Address" onChange={this.onaddrChange}></TextField>
                         </Box>
                         <Box >
                             <TextField label="Hospital Name" onChange={this.onhnameChange}></TextField>

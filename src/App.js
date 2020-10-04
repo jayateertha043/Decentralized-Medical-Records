@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter,Switch,Route} from 'react-router-dom';
+import {HashRouter,Switch,Route} from 'react-router-dom';
 import Home from "./routes/home";
 import Admin from "./routes/admin";
 import Hospital from "./routes/hospital";
@@ -9,7 +9,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route path="/"exact>
             <Home/>
@@ -27,7 +27,7 @@ class App extends Component {
             <Hospital/>
           </Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
