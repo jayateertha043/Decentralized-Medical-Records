@@ -40,39 +40,39 @@ Use <code>npm start</code> to test the project in your localhost.
 
 ## Modules:
 
-Owner:
+* Owner:
 
-Owner is the creator of the smart contract.
+	+ Owner is the creator of the smart contract.
 
-Ownership is transferable
+	+ Ownership is transferable
 
-Owners can add/remove admins
-
-
-Admin:
-
-Can add Admins
-
-Can remove Admins
-
-Owner of the contract can tranfer his ownership
+	+ Owners can add/remove admins
 
 
-Hospital:
+* Admin:
 
-Can add patients
+	+ Can add Admins
 
-Can view patient's records with permission
+	+ Can remove Admins
 
-Can add patient's records with permission
+	+ Owner of the contract can tranfer his ownership
 
-Patient:
 
-Can Sign/Login up as patient
+* Hospital:
 
-Can view/add own records
+	+ Can add patients
 
-Can grant/revoke permissions to add/view records
+	+ Can view patient's records with permission
+
+	+ Can add patient's records with permission
+
+* Patient:
+
+	+ Can Sign/Login up as patient
+
+	+ Can view/add own records
+
+	+ Can grant/revoke permissions to add/view records
 
 ## Author
 
