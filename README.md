@@ -21,10 +21,10 @@ keeps your data in a distributed environment to prevent data loss and redundancy
 
 ## REQUIREMENTS AND INSTALLATION
 
-You need to have npm installed in your system <br />
+You need to have npm installed in your system. <br />
 You also need Metamask extension installed in your chrome browser(PC) or Metamask app in Android.</br>
-If you using android open the link using Metamask browser 
-Use <code>npm start</code> to test the project in your localhost
+If you using android open the link using Metamask browser. </br>
+Use <code>npm start</code> to test the project in your localhost.
 
 ## Technologies Used :
 
