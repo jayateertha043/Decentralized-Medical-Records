@@ -2,10 +2,13 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/jayateertha043/Decentralized-Medical-Records/blob/master/LICENCE.txt" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/jayateertha043/Decentralized-Medical-Records" />
   </a>
   <a href="https://twitter.com/jayateerthaG" target="_blank">
     <img alt="Twitter: jayateerthaG" src="https://img.shields.io/twitter/follow/jayateerthaG.svg?style=social" />
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=@jayateerthaG%20Found%20a%20great%20project!!!%20View%20on%20Github%20:&url=https%3A%2F%2Fgithub.com%2Fjayateertha043%2FDecentralized-Medical-Records" target="_blank">
+  <img alt="Tweet" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fjayateertha043%2FDecentralized-Medical-Records" />
   </a>
 </p>
 
