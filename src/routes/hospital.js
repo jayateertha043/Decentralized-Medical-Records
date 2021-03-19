@@ -344,7 +344,7 @@ class Hospital extends Component {
                                 <TableCell>{row["reason"]}</TableCell>
                                 <TableCell>{row["admOn"]}</TableCell>
                                 <TableCell>{row["disOn"]}</TableCell>
-                                <TableCell><a href={"/#/embed/"+row["ipfs"]}>View/Download Record</a></TableCell>
+                                <TableCell><a href={"/#/embed/"+row["ipfs"]} target="_blank">View/Download Record</a></TableCell>
                             </TableRow>)
                         }
                     )}
