@@ -3,8 +3,17 @@ import ipfs from "../components/ipfs";
 import {Table,TableHead,TableContainer,TableBody,TableCell,TableRow,Chip,Card,Grid,Box,Paper, Typography,TextField, Button,CircularProgress} from '@material-ui/core';
 import Header from "../components/Header";
 import InitialiseWeb3 from '../components/web3';
-
-
+var CryptoJS = require("crypto-js");
+function encode(myString){
+    const encodedWord = CryptoJS.enc.Utf8.parse(myString); // encodedWord Array object
+    const encoded = CryptoJS.enc.Base64.stringify(encodedWord); // string: 'NzUzMjI1NDE='
+    return encoded;
+}
+  function decode(encoded){
+    const encodedWord = CryptoJS.enc.Base64.parse(encoded); // encodedWord via Base64.parse()
+    const decoded = CryptoJS.enc.Utf8.stringify(encodedWord); // decode encodedWord via Utf8.stringify() '75322541'
+    return decoded;
+}
 
 class Hospital extends Component {
     DMR=null;account="";
@@ -43,6 +52,7 @@ class Hospital extends Component {
         console.log("owner\t"+this.state.owner);
         console.log("Account\t"+this.state.account);
       }
+
       getHospital = async ()=>{
         
         await this.setState({viewH:false,addview:false,load:true});
@@ -130,9 +140,12 @@ class Hospital extends Component {
         let res= await ipfs.add(this.state.buffer);
         console.log(res[0].hash);
         let url="https://ipfs.io/ipfs/"+res[0].hash;
+        var ciphertext = encode(CryptoJS.AES.encrypt(JSON.stringify(url), 'dmr').toString());
+        var decryptedtext = CryptoJS.AES.decrypt(decode(ciphertext).toString(), 'dmr').toString(CryptoJS.enc.Utf8);
+        console.log("encrypted:"+ciphertext);
+        console.log("decrypted:"+decryptedtext);
         await this.setState({ipfs:url.toString()});
-        console.log(url);
-        let result = await this.DMR.methods.addRecord(this.state.addr,this.state.hname,this.state.reason,this.state.admOn,this.state.disOn,this.state.ipfs).send({from:this.state.account});
+        let result = await this.DMR.methods.addRecord(this.state.addr,this.state.hname,this.state.reason,this.state.admOn,this.state.disOn,ciphertext).send({from:this.state.account});
         console.log(result);
         await this.setState({load:false,orecord:true});
         }
@@ -171,7 +184,7 @@ class Hospital extends Component {
                             <TextField type="date" label="Discharged On" onChange={this.ondisOnChange} InputLabelProps={{ shrink: true }}></TextField>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center" mt={2} mb={2}>
-                            <TextField type="file" label="Report" InputLabelProps={{ shrink: true }} onChange={this.captureFile}></TextField>
+                            <TextField type="file" inputProps={{accept:"application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"}} label="Report" InputLabelProps={{ shrink: true }} onChange={this.captureFile}></TextField>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center" mb={1}>
                             <Button onClick={this.onOtherRecordSubmit} variant="contained" style={{backgroundColor:"green",color:"floralwhite"}}>Submit</Button>
@@ -325,15 +338,15 @@ class Hospital extends Component {
                 </TableHead>
                 <TableBody>
                     {rows.map(
-                        (row,index)=>(
-                            <TableRow key={index}>
+                        (row,index)=>{
+                            return(<TableRow key={index}>
                                 <TableCell>{row["hname"]}</TableCell>
                                 <TableCell>{row["reason"]}</TableCell>
                                 <TableCell>{row["admOn"]}</TableCell>
                                 <TableCell>{row["disOn"]}</TableCell>
-                                <TableCell><a href={row["ipfs"]}>View/Download Record</a></TableCell>
-                            </TableRow>
-                        )
+                                <TableCell><a href={"/#/embed/"+row["ipfs"]}>View/Download Record</a></TableCell>
+                            </TableRow>)
+                        }
                     )}
 
                     
