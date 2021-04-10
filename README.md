@@ -25,6 +25,16 @@ keeps your data in a distributed environment to prevent data loss and redundancy
 >Visit : https://blockchain-dmr.netlify.app/ for testing live.</br>
 >Visit : https://rinkeby.etherscan.io/address/0x33febb8f192941a87d87ef70cc5f4427c44bf29e for Smart Contract Address.
 
+
+>Note: The below private key and public key is public ,don't store any real ETH in the wallet.I am not responsible for your losses.
+
+
+>For trying Admin login import below private key into your metamask wallet and login using that account.
+>Admin Account Ethereum wallet Private Key: 0000000000000000000000000000000000000000000000000000000000000002
+>Admin Account Ethereum wallet Public Key: 0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF
+
+>For Hospital login ,login using admin account, add hospital address then login using hospital wallet address.
+
 ## REQUIREMENTS AND INSTALLATION
 
 You need to have npm installed in your system. <br />
